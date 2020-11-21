@@ -1,9 +1,9 @@
 /*
-ÎÒÕâÖÖ·½·¨ËäÈ»×öÒ»ÖÖÔËËãÊ±¿´ËÆ½ÚÊ¡¿Õ¼ä£¬µ«ÊÇ×öÁíÒ»ÖÖÔËËãÊ±ÐèÒª¸´ÖÆÒ»±éÁ½¸ö¶àÏîÊ½Á´±í¶àÏîÊ½£¬ÊµÔòÀË·ÑÄÚ´æ 
-¶ÔÓÚ´´½¨µÚÈý¸öÁ´±íÓÃÀ´½ÓÊÕÔËËãµÄ½á¹û¸üºÃÒ»µã£¬¾¡Á¿ÔÚ²»ÆÆ»µÔ­Á´±íµÄ»ù´¡ÉÏ½øÐÐÔËËã 
+æˆ‘è¿™ç§æ–¹æ³•è™½ç„¶åšä¸€ç§è¿ç®—æ—¶çœ‹ä¼¼èŠ‚çœç©ºé—´ï¼Œä½†æ˜¯åšå¦ä¸€ç§è¿ç®—æ—¶éœ€è¦å¤åˆ¶ä¸€éä¸¤ä¸ªå¤šé¡¹å¼é“¾è¡¨å¤šé¡¹å¼ï¼Œå®žåˆ™æµªè´¹å†…å­˜ 
+å¯¹äºŽåˆ›å»ºç¬¬ä¸‰ä¸ªé“¾è¡¨ç”¨æ¥æŽ¥æ”¶è¿ç®—çš„ç»“æžœæ›´å¥½ä¸€ç‚¹ï¼Œå°½é‡åœ¨ä¸ç ´ååŽŸé“¾è¡¨çš„åŸºç¡€ä¸Šè¿›è¡Œè¿ç®— 
 */ 
 
-
+//gitä¿®æ”¹ç¬¬ä¸€æ¬¡
 
 #include<iostream>
 #include<cstdlib> 
@@ -28,14 +28,14 @@ node *Multiply(node *head1, node *head2);
 int main()
 {
 	node *head1, *head2, *h, *h2, *s, *t, *h3, *p, *q;
-	cout << "ÇëÊäÈëµÚÒ»¸ö¶àÏîÊ½µÄÖµ£¨°´Ö¸ÊýµÝÔöÊäÈë£©\n";
+	cout << "è¯·è¾“å…¥ç¬¬ä¸€ä¸ªå¤šé¡¹å¼çš„å€¼ï¼ˆæŒ‰æŒ‡æ•°é€’å¢žè¾“å…¥ï¼‰\n";
 	head1 = CreatList();
-	cout << "ÇëÊäÈëµÚ¶þ¸ö¶àÏîÊ½µÄÖµ£¨°´Ö¸ÊýµÝÔöÊäÈë£©\n";
+	cout << "è¯·è¾“å…¥ç¬¬äºŒä¸ªå¤šé¡¹å¼çš„å€¼ï¼ˆæŒ‰æŒ‡æ•°é€’å¢žè¾“å…¥ï¼‰\n";
 	head2 = CreatList();
-	s = PreTheLinkList(head1);    //¸´ÖÆµÚÒ»¸ö¶àÏîÊ½ 
-	t = PreTheLinkList(head2);    //¸´ÖÆµÚ¶þ¸ö¶àÏîÊ½ 
-	p = PreTheLinkList(head1);    //¸´ÖÆµÚÒ»¸ö¶àÏîÊ½ 
-	q = PreTheLinkList(head2);    //¸´ÖÆµÚÒ»¸ö¶àÏîÊ½ 
+	s = PreTheLinkList(head1);    //å¤åˆ¶ç¬¬ä¸€ä¸ªå¤šé¡¹å¼ 
+	t = PreTheLinkList(head2);    //å¤åˆ¶ç¬¬äºŒä¸ªå¤šé¡¹å¼ 
+	p = PreTheLinkList(head1);    //å¤åˆ¶ç¬¬ä¸€ä¸ªå¤šé¡¹å¼ 
+	q = PreTheLinkList(head2);    //å¤åˆ¶ç¬¬ä¸€ä¸ªå¤šé¡¹å¼ 
 	
 	cout << "pa = ";
 	HBTheLinklist(head1);
@@ -47,20 +47,20 @@ int main()
 	PrintLinkList(head2);
 	cout << endl;
 	
-	h = AdditTheMult(head1, head2);           //¼Ó·¨ 
+	h = AdditTheMult(head1, head2);           //åŠ æ³• 
 	cout << "pc = ";
 	HBTheLinklist(h);
 	PrintLinkList(h);
 	cout << endl;
 	
-	h2 = SubTheMult(s, t);                //¼õ·¨
+	h2 = SubTheMult(s, t);                //å‡æ³•
 	cout << "pd = ";
 	HBTheLinklist(h2);
 	PrintLinkList(h2);
 	cout << endl;
 	
 	
-	h3 = Multiply(p, q);                //³Ë·¨ 
+	h3 = Multiply(p, q);                //ä¹˜æ³• 
 	cout << "pe = ";
 	HBTheLinklist(h3);
 	PrintLinkList(h3);
@@ -107,14 +107,14 @@ node *Multiply(node *head1, node *head2)
 	}
 	return num;	
 }
-node *CreatList()   //´Ë´¦ÐèÒªÓÃµ½Î²²å·¨´´½¨Á´±íÀ´´æ´¢¶àÏîÊ½ 
+node *CreatList()   //æ­¤å¤„éœ€è¦ç”¨åˆ°å°¾æ’æ³•åˆ›å»ºé“¾è¡¨æ¥å­˜å‚¨å¤šé¡¹å¼ 
 {
 	node *head, *p, *rail;
 	head = (node *)malloc(sizeof(node));
 	head->next = NULL;
 	rail = head;
-	int factor, index;               //ÊäÈë¶àÏîÊ½ÏÈÊäÈëÏµÊýºÍÖ¸Êý£¬Èç¹ûÏµÊýÎªÁãÔòÌø¹ý´Ë´Î´´½¨ 
-	cout << "ÇëÊäÈë¸ÃÏîµÄÏµÊý/Ö¸Êý\n";
+	int factor, index;               //è¾“å…¥å¤šé¡¹å¼å…ˆè¾“å…¥ç³»æ•°å’ŒæŒ‡æ•°ï¼Œå¦‚æžœç³»æ•°ä¸ºé›¶åˆ™è·³è¿‡æ­¤æ¬¡åˆ›å»º 
+	cout << "è¯·è¾“å…¥è¯¥é¡¹çš„ç³»æ•°/æŒ‡æ•°\n";
 	cin >> factor >> index; 
 	while(factor != 0)
 	{
@@ -123,7 +123,7 @@ node *CreatList()   //´Ë´¦ÐèÒªÓÃµ½Î²²å·¨´´½¨Á´±íÀ´´æ´¢¶àÏîÊ½
 		p->Z_num = index;
 		rail->next = p;
 		rail = p;
-		cout << "ÇëÊäÈë¸ÃÏîµÄÏµÊý/Ö¸Êý\n";
+		cout << "è¯·è¾“å…¥è¯¥é¡¹çš„ç³»æ•°/æŒ‡æ•°\n";
 		cin >> factor >> index; 
 	}
 	rail->next = NULL; 
@@ -132,7 +132,7 @@ node *CreatList()   //´Ë´¦ÐèÒªÓÃµ½Î²²å·¨´´½¨Á´±íÀ´´æ´¢¶àÏîÊ½
 
 
 
-void PrintLinkList(node *head)    //´òÓ¡¶àÏîÊ½º¯Êý 
+void PrintLinkList(node *head)    //æ‰“å°å¤šé¡¹å¼å‡½æ•° 
 { 
 	node * p = head->next;
 	while(p != NULL)
@@ -149,13 +149,13 @@ void PrintLinkList(node *head)    //´òÓ¡¶àÏîÊ½º¯Êý
 
 
 
-node *AdditTheMult(node *head1, node *head2)   //¶àÏîÊ½¼Ó·¨ 
+node *AdditTheMult(node *head1, node *head2)   //å¤šé¡¹å¼åŠ æ³• 
 {
 	node *p, *q, *r;
 	p = head1->next;
 	q = head2->next;
 	r = head1;
-	while(q != NULL)       //Í¨¹ý²ð¿ªÒ»¸ö¶àÏîÊ½µÄÃ¿Ò»ÏîÓëÁíÒ»¸ö¶àÏîÊ½Ã¿Ò»Ïî½øÐÐ±È½ÏÈ»ºóÔËËã 
+	while(q != NULL)       //é€šè¿‡æ‹†å¼€ä¸€ä¸ªå¤šé¡¹å¼çš„æ¯ä¸€é¡¹ä¸Žå¦ä¸€ä¸ªå¤šé¡¹å¼æ¯ä¸€é¡¹è¿›è¡Œæ¯”è¾ƒç„¶åŽè¿ç®— 
 	{
 		head2->next = q->next;
 		q->next = NULL;
@@ -186,7 +186,7 @@ node *AdditTheMult(node *head1, node *head2)   //¶àÏîÊ½¼Ó·¨
 }
 
 
-node *SubTheMult(node *head1, node *head2)   //¶àÏîÊ½¼õ·¨ 
+node *SubTheMult(node *head1, node *head2)   //å¤šé¡¹å¼å‡æ³• 
 {
 	node *p, *q, *r;
 	p = head1->next;
@@ -227,7 +227,7 @@ node *SubTheMult(node *head1, node *head2)   //¶àÏîÊ½¼õ·¨
 	return head1;
 }
 
-void Free(node *head)    //ÊÍ·ÅÁ´±í¿Õ¼ä 
+void Free(node *head)    //é‡Šæ”¾é“¾è¡¨ç©ºé—´ 
 {
 	node *p, *q;
 	p = head;
@@ -238,7 +238,7 @@ void Free(node *head)    //ÊÍ·ÅÁ´±í¿Õ¼ä
 		p = q;
 	}
 }
-node *PreTheLinkList(node *head)          //ÓÉÓÚ¶àÏîÊ½¼Ó·¨½«Ô­Á´±íÆÆ»µ£¬´Ëº¯Êý¸³ÖµÔ­Á´±í 
+node *PreTheLinkList(node *head)          //ç”±äºŽå¤šé¡¹å¼åŠ æ³•å°†åŽŸé“¾è¡¨ç ´åï¼Œæ­¤å‡½æ•°èµ‹å€¼åŽŸé“¾è¡¨ 
 {
 	node *h, *p, *rail, *q;
 	p = head->next;
